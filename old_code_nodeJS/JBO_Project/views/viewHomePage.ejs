@@ -1,0 +1,23 @@
+<% include ./header %>
+
+
+<div class="content">
+    <div class="content-title"><%= title %></div>
+        <div class="content-index">
+            <div class="text">Họ và tên: <%= user.hoten %> </div>
+            <div class="text">MSSV: <%= user.mssv %> </div>
+            <div class="text">Lớp: <%= user.lop %> </div>
+            <div class="text">Ngày sinh: <%= user.ngaysinh %> </div>
+            <div class="text">Cấp độ: <%= level %> </div>
+            <div class="text">Chức vụ: <%= chucvu %> </div>
+            <div class="text">Ngày tham gia: <%= user.joindate %> </div>
+            <div class="text">SĐT: <%= user.sdt %> </div>
+            <div class="text">Email: <%= user.email %> </div>
+            <div class="text">Facebook: <%= user.facebook %> </div>
+            <div class="text"><a href="/page/EditInfor">[Sửa thông tin]</a></div>
+        </div>
+
+</div>
+
+
+<% include ./footer %>

@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="/img/logo.ico"/>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <title>Login Page</title>
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="login-page-title"> ĐĂNG NHẬP CEE-IUH</div>
+
+        <div class="login-page-form">
+            <img width="100" height="auto" src="/img/logo.png" alt="logo cee" style="margin-top: 10px; margin-bottom: 10px;" /> <br/>
+            <%- noti %>
+                <form action="" method="POST">
+                    <input class="input" type="text" name="mssv" placeholder="MSSV" />
+                    <br/>
+                    <input class="input" type="password" name="pass" placeholder="Mật khẩu" />
+                    <br/>
+                    <input class="submit" type="submit" name="submit" value="Đăng Nhập" />
+                </form>
+        </div>
+        <div class="coppyright">
+            © 2019 CEE-IUH
+        </div>
+    </div>
+</body>
+
+</html>

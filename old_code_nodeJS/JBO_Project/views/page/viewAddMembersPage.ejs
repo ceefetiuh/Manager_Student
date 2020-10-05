@@ -1,0 +1,39 @@
+<% include ../header %>
+<div class="content">
+    <div class="content-title"><%= title %></div>
+        <div class="content-index">
+            <% if (user.chucvu == 2 || user.chucvu == 99) { %>
+                <% if (success) { %>
+                    <div class="text"><font color="green"><b><%- success %></b></font></div>
+                <% } %>
+                <% if (noti) { %>
+                    <div class="text"><font color="red"><b>Lỗi: <%- noti %></b></font></div>
+                <% } %>
+                    <form action="" method="POST">
+                        <input class="input" type="text" name="mssv" placeholder="MSSV"/> <br/>
+                        <input class="input" type="text" name="hoten" placeholder="Họ và tên"/> <br/>
+                        <input class="input" type="text" name="lop" placeholder="Lớp"/> <br/>
+                        <input class="input" type="text" name="ngaysinh" placeholder="Ngày sinh (Định dạng: dd/mm/yyyy)"/> <br/>
+                        <input class="input" type="text" name="joindate" placeholder="Ngày tham gia CLB (Định dạng: dd/mm/yyyy)"/> <br/>
+                        <input class="input" type="text" name="level" placeholder="Cấp độ thành viên: 0, 1, 2, 3"/> <br/>
+                        <input class="input" type="text" name="chucvu" placeholder="Chức vụ: 0, 1, 2, 3"/> <br/>
+                        <input class="input" type="text" name="sdt" placeholder="Số điện thoại"/> <br/>
+                        <input class="input" type="text" name="email" placeholder="Email"/> <br/>
+                        <input class="input" type="text" name="facebook" placeholder="Facebook"/> <br/>
+                        <input class="submit" type="submit" name="submit" value="Thêm"/> <br/>
+                    </form>
+                    <div class="text"><font color="red"><b>Lưu ý:</b></font></div>
+                    <div class="text">- Các trường bắt buộc phải được điền đầy đủ.</div>
+                    <div class="text">- Cấp độ thành viên: 0 - [Thành viên mới], 1 - [Thành viên dự bị], 2 - [Thành viên chính thức], 3 - [Cựu thành viên] (Mục đích để quản lý số lượng thành viên clb).</div>
+                    <div class="text">- Chức vụ: 0 - [Không có chức vụ], 1 - [Quản lý trang thiết bị], 2 - [Quản lý thành viên], 3 - [Quản lí đề tài] <b>.</b></div>
+                    <div class="text">- Khi được thêm, mật khẩu mặc định sẽ là <b>12345</b>.</div>
+                    <div class="text">- Định dạng ngày tháng phải được viết dạng <b>dd/mm/yyy</b>. Ví dụ: 11/11/1999.</div>
+            <% } else { %>
+                <div class="text"><font color="red"><b>Lỗi: Không được phép truy cập</b></font></div>
+            <% } %>
+        </div>
+
+</div>
+
+
+<% include ../footer %>

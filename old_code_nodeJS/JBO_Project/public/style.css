@@ -1,0 +1,110 @@
+body {
+    background-color: #eee;
+    color: #888;
+}
+
+a {
+    text-decoration: none;
+    color: #607d8b;
+    font-weight: bold;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.login-page {
+    padding: 15px;
+    margin: 0 auto;
+    width: 450px;
+}
+
+.login-page-title {
+    background-color: #607d8b;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.login-page-form {
+    background-color: #fff;
+    padding: 10px;
+    color: #888;
+    text-align: center;
+}
+
+.input {
+    border: 1px solid #93adb9;
+    padding: 10px;
+    margin: 10px;
+}
+
+.submit {
+    background-color: #607d8b;
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+}
+
+.coppyright {
+    margin: 35px;
+    text-align: center;
+}
+
+.header-bar {
+    background-color: #607d8b;
+    padding: 10px;
+    color: #fff;
+}
+
+.header-logo {
+    margin-left: 10px;
+}
+
+.user {
+    width: 200px;
+    height: 500px;
+    float: left;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+.content {
+    overflow: auto;
+    height: 500px;
+    width: 793px;
+    float: right;
+    background-color: #fff;
+    margin-top: 5px;
+}
+
+.user-info {
+    border-bottom: 2px solid #607d8b;
+    padding: 15px;
+}
+
+.content-title {
+    border-bottom: 2px solid #607d8b;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.menu {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.content-index {
+    padding: 15px;
+}
+
+.text-bold {
+    color: #607d8b;
+    font-weight: bold;
+}
+
+.text {
+    padding: 10px;
+}

@@ -1,0 +1,26 @@
+<% include ../header %>
+
+
+<div class="content">
+    <div class="content-title"><%= title %></div>
+        <div class="content-index">
+            <% if (success) { %>
+                    <div class="text"><font color="green"><b><%- success %></b></font></div>
+                <% } %>
+            <% if (noti) { %>
+                    <div class="text"><font color="red"><b>Lỗi: <%- noti %></b></font></div>
+            <% } %>
+            <form action="" method="POST">
+                <input class="input" type="password" name="passCurrent" placeholder="Mật khẩu hiện tại"/> <br/>
+                <input class="input" type="password" name="passNew" placeholder="Mật khẩu mới"/> <br/>
+                <input class="input" type="password" name="passRetype" placeholder="Nhập lại mật khẩu"/> <br/>     
+                <input class="submit" type="submit" name="submit" value="Đổi mật khẩu"/> <br/>
+            </form>
+            <div class="text"><font color="red"><b>Lưu ý:</b></font></div>
+            <div class="text">- Mật khẩu phải từ 5 đến 15 kí tự.</div>
+        </div>
+
+</div>
+
+
+<% include ../footer %>
